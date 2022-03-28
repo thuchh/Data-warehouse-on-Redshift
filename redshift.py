@@ -28,21 +28,7 @@ def create_iam_role(config):
                                 'Principal': {'Service': 'redshift.amazonaws.com'}
                               }],
                  'Version': '2012-10-17'})
-        )
-        
-        
-#         dwhRole = iam.create_role(
-#         Path='/',
-#         RoleName=DWH_IAM_ROLE_NAME,
-#         Description = "Allows Redshift clusters to call AWS services on your behalf.",
-#         AssumeRolePolicyDocument=json.dumps(
-#             {'Statement': [{'Action': 'sts:AssumeRole',
-#                            'Effect': 'Allow',
-#                            'Principal': {'Service': 'redshift.amazonaws.com'}
-#                            }],
-#              'Version': '2012-10-17'})
-#     )   
-            
+        )    
             
     except iam.exceptions.EntityAlreadyExistsException:
         print('IAM role already exists. Use the existing IAM role')
