@@ -83,3 +83,6 @@ columns: song_id, title, artist_id, year, duration
 columns: artist_id, name, location, lattitude, longitude
 4. time - timestamps of records in songplays broken down into specific units
 columns: start_time, hour, day, week, month, year, weekday
+
+### Schema
+![schema data model](https://github.com/thuchh/Data-warehouse-on-Redshift/blob/main/schema.png)
